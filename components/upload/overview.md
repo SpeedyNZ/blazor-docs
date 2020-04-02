@@ -100,7 +100,7 @@ To use a Telerik Upload for Blazor
         
         
                 [HttpPost]
-                public ActionResult Remove(string[] files) // the default field name. See RemoveField
+                public ActionResult Remove([FromForm] string[] files) // the default field name. See RemoveField
                 {
                     if (files != null)
                     {
